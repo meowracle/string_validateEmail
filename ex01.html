@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ex01</title>
+</head>
+<body>
+<script>
+    function isValidEmail(str) {
+        regexp = /^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\.[A-Za-z0-9]+)$/;
+        if (regexp.test(str)) {
+            alert("email hop le")
+        } else {
+            alert("email khong hop le")
+        }
+    }
+    while (true) {
+        var string = prompt("moi nhap vao email de kiem tra")/*.toString()*/;
+        isValidEmail(string);
+    }
+</script>
+</body>
+</html>
